@@ -1,4 +1,4 @@
-#include "../../main/extend.h"
+#include "include/extend.h"
 
 extern uint32_t __extend_start[];
 uint32_t *extend_api = __extend_start + 64;
