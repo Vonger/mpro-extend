@@ -21,6 +21,8 @@
 
 - goto extend folder.
 
+- clone lvgl to submodule, call `git submodule update --init --recursive`
+
 - call "make" to genernate x.bin, this bin file is not compressed LVGL.
 
 - call "make bin" to genernate firmware, after this step, we will have the new firmware name is MPRO.output.bin
