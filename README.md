@@ -29,7 +29,7 @@
 
 - download from https://vocore.io/misc/v2scrctl.zip
 
-- install driver for MPRO screen by zadig(Windows, Linux do not need driver).
+- install driver for MPRO screen by zadig(Windows only, Linux do not need driver).
 
 - run v2scrctl.exe(Windows) or v2scrctl(Linux).
 
