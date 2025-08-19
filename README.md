@@ -9,10 +9,6 @@
 - Install make, gcc, lzma(5.8.1), cmake.
   - make sure your lzma version is 5.8.1, download https://github.com/tukaani-project/xz/archive/refs/tags/v5.8.1.tar.gz to compile latest version, replace /usr/bin/lzma and /usr/bin/xz. Ubuntu default version is out of date, normally it is 5.2.5, that liblzma version won't work.
 
-- Download lvgl source code, put to extend folder.
-  
-  - Makefile will try to execute extend/lvgl/CMakeList.txt to compile LVGL.
-
 - Copy MPRO.xxx.NOLOGO.bin or MPRO.xxx.VOCORE.bin to extend folder, rename to MPRO.bin.
   - firmware download at https://vocore.io/misc/v2scrctl.zip
   - "xxx" in the firmware file name is the size code of the screen.
