@@ -17,7 +17,9 @@
 
 - goto extend folder.
 
-- clone lvgl to submodule, call `git submodule update --init --recursive`
+- clone lvgl to submodule
+  - option 1: call `git submodule update --init --recursive`
+  - option 2: directly clone lvgl by `git clone https://github.com/lvgl/lvgl.git -b release/v9.3 --depth=1`, then rename the folder to lvgl and replace the exists one.
 
 - call "make" to genernate x.bin, this bin file is not compressed LVGL.
 
