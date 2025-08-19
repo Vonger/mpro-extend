@@ -13,8 +13,8 @@
   
   - Makefile will try to execute extend/lvgl/CMakeList.txt to compile LVGL.
 
-- Copy MPROB.xxx.NOLOGO.bin to extend folder, rename to MPRO.bin.
-  
+- Copy MPRO.xxx.NOLOGO.bin or MPRO.xxx.VOCORE.bin to extend folder, rename to MPRO.bin.
+  - firmware download at https://vocore.io/misc/v2scrctl.zip
   - "xxx" in the firmware file name is the size code of the screen.
 
 ### Compile
