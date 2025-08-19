@@ -11,7 +11,7 @@
 
 - Copy MPRO.xxx.NOLOGO.bin or MPRO.xxx.VOCORE.bin to extend folder, rename to MPRO.bin.
   - firmware download at https://vocore.io/misc/v2scrctl.zip
-  - "xxx" in the firmware file name is the size code of the screen.
+  - "xxx" in the firmware file name is the size code of the screen, it must match the screen type you plan to use.
 
 ### Compile
 
