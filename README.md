@@ -4,10 +4,10 @@
 
 - Linux System: for example, Ubuntu.
 
-- Install arm toolchain(arm-none-eabi-gcc), recommand version [10.3-2021.10](https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2?rev=78196d3461ba4c9089a67b5f33edf82a&hash=5631ACEF1F8F237389F14B41566964EC). Compile require autoconf, autopoint.
+- Install arm toolchain(arm-none-eabi-gcc), recommand version [10.3-2021.10](https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2?rev=78196d3461ba4c9089a67b5f33edf82a&hash=5631ACEF1F8F237389F14B41566964EC).
 
 - Install make, gcc, lzma(5.8.1), cmake.
-  - make sure your lzma version is 5.8.1, download https://github.com/tukaani-project/xz/archive/refs/tags/v5.8.1.tar.gz to compile latest version, replace /usr/bin/lzma and /usr/bin/xz. Ubuntu default version is out of date, normally it is 5.2.5, that liblzma version won't work.
+  - make sure your lzma version is 5.8.1, download https://github.com/tukaani-project/xz/archive/refs/tags/v5.8.1.tar.gz to compile latest version, replace /usr/bin/lzma and /usr/bin/xz. Ubuntu default version is out of date, normally it is 5.2.5, that liblzma version won't work. Compile xz/lzma require autoconf, autopoint.
 
 - Copy MPRO.xxx.NOLOGO.bin or MPRO.xxx.VOCORE.bin to extend folder, rename to MPRO.bin.
   - firmware download at https://vocore.io/misc/v2scrctl.zip
