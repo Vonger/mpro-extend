@@ -34,8 +34,8 @@ $(SOBJS) : %.o : %.S
 	@$(AS) $(AFLAGS) $(INC) -c $< -o $@
 
 CFILES := $(foreach dir, $(SOURCE), $(wildcard $(dir)/*.c))
-CFILES += $(shell find $(LVGL_PATH)/src -type f -name '*.c')
-CFILES += $(shell find $(LVGL_PATH)/demos -type f -name '*.c')
+CFILES += $(shell find $(LVGL_PATH)/src -type f -name '*.c' 2> /dev/null)
+CFILES += $(shell find $(LVGL_PATH)/demos -type f -name '*.c' 2> /dev/null)
 COBJS  := $(patsubst %, %, $(CFILES:.c=.o))
 $(COBJS) : %.o : %.c
 	@echo [CC] $<
@@ -63,9 +63,13 @@ bin:
 		exit 1; \
 	else \
 		$(PWD)/extend_combine MPRO.bin x.bin; \
-		echo "NOTE: Please use 'mprotool upgrade MPRO.output.bin' or v2scrctl upgrade your screen."; \
+		echo "NOTE: Please use v2scrctl to upgrade your screen, firmware name is MPRO.output.bin."; \
 	fi
 	@mv x.bin.bak x.bin
+
+.PHONY: clone
+clone:
+	git clone https://github.com/lvgl/lvgl.git --depth=1 -b v9.2.2
 
 .PHONY: clean
 clean:
