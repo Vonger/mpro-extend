@@ -69,7 +69,7 @@ bin:
 
 .PHONY: clone
 clone:
-	git clone https://github.com/lvgl/lvgl.git --depth=1 -b v9.2.2
+	git clone https://github.com/lvgl/lvgl.git --depth=1 -b v9.4.0
 
 .PHONY: clean
 clean:
